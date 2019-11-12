@@ -1,0 +1,6 @@
+.vscode/launch.json
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/stepwise
+__pycache__/test_prueba.cpython-36-pytest-5.2.2.pyc
+__pycache__/regresion.cpython-36.pyc
+.vscode/settings.json

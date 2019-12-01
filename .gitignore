@@ -82,3 +82,5 @@ Data/API_COL_DS2_es_csv_v2_449302/.~lock.API_COL_DS2_es_csv_v2_449302.csv#
 Data/UCI HAR Dataset/UCI HAR Dataset/train/X_train.csv
 Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.csv
 __pycache__/regresionLineal.cpython-36.pyc
+.vscode/.ropeproject/config.py
+.vscode/.ropeproject/objectdb

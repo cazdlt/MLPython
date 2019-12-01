@@ -18,22 +18,22 @@ indicadores=list(data_valid.columns)
 
 #extraer data a analizar y agregar data faltante, graficar
 #data_tasacambio=data_valid.loc[:,"Tasa de cambio oficial (UMN por US$, promedio para un período)"]
-data_tasacambio=data_valid.loc[:,"Crecimiento de la población (% anual)"]
-print(data_tasacambio.head())
-#data_tasacambio[2019]=3500
-data_tasacambio=data_tasacambio.dropna()
-sns.relplot(data=data_tasacambio)
+data=data_valid.loc[:,"Crecimiento de la población (% anual)"]
+print(data.head())
+#data[2019]=3500 si data es tasacambio
+data=data.dropna()
+sns.relplot(data=data)
 
 #crear arreglos np
-tasacambio=data_tasacambio.to_numpy()
-año=np.array(data_tasacambio.index)
+data_np=data.to_numpy()
+año=np.array(data.index)
 
 #pruebas ML
 alfa=0.0000001
 maxit=10000
 umbral=0.1
 
-theta,costos=rl.regresionLineal(año,tasacambio,alfa,maxit,umbral)
+theta,costos=rl.regresionLineal(año,data_np,alfa,maxit,umbral)
 hipotesis=rl.h(año,theta)
 rl.linePlot(año,hipotesis)
 

@@ -78,3 +78,7 @@ Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc
 Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc_y_train.txt
 Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc_z_train.txt
 .ipynb_checkpoints/regresion lineal-checkpoint.ipynb
+Data/API_COL_DS2_es_csv_v2_449302/.~lock.API_COL_DS2_es_csv_v2_449302.csv#
+Data/UCI HAR Dataset/UCI HAR Dataset/train/X_train.csv
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.csv
+__pycache__/regresionLineal.cpython-36.pyc

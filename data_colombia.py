@@ -29,12 +29,12 @@ data_np=data.to_numpy()
 año=np.array(data.index)
 
 #pruebas ML
-alfa=0.0000001
-maxit=10000
-umbral=0.1
+alfa=0.0000005
+maxit=1000
+umbral=0.001
 
-theta,costos=rl.regresionLineal(año,data_np,alfa,maxit,umbral)
-hipotesis=rl.h(año,theta)
+theta,costos=rl.regresionLineal(año,y=data_np,alfa=alfa,maxit=maxit,umbralError=umbral)
+hipotesis=rl.hipotesis(theta,año)
 rl.linePlot(año,hipotesis)
 
 print(costos)

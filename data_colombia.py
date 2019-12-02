@@ -31,7 +31,7 @@ año=np.array(data.index)
 #pruebas ML
 alfa=0.0000005
 maxit=1000
-umbral=0.001
+umbral=1e-6
 
 theta,costos=rl.regresionLineal(año,y=data_np,alfa=alfa,maxit=maxit,umbralError=umbral)
 hipotesis=rl.hipotesis(theta,año)

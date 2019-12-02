@@ -30,8 +30,7 @@ def h(theta,x):
     #return np.transpose(theta)@x
 
 def reorganizarParametros(x,m):
-    #reorganizando x para más fácil manejo
-    
+    #reorganizando x para más fácil manejo    
     x2=[]
     for i in range(m):   
         x2.append([x_j[i] for x_j in x ])        
@@ -61,37 +60,40 @@ def gradientDescent(x,y,theta,alfa):
 
     return theta
 
-def regresionLineal(*x,y,alfa=0.01,maxit=1000,umbralError=0.001):
+def regresionLineal(*x,y,alfa,maxit=1000,umbralError=0.001):
     """jajajaja"""
     theta=np.ones(len(x)+1).astype(float)
     
-    costArray=np.zeros(maxit)
-    last_it=0
+    costArray=np.nan*np.zeros(maxit+1)
+    costArray[0]=costFunction(x,y,theta)
 
     for k in range(maxit):
         theta=gradientDescent(x,y,theta,alfa)
         
-        costArray[k]=costFunction(x,y,theta)
-        #print(theta)
-        if(np.abs(costArray[k])<umbralError):
-            last_it=k
+        costArray[k+1]=costFunction(x,y,theta)
+        
+        if np.abs(costArray[k+1]-costArray[k]) < umbralError:
             break
         elif any(np.isnan(theta)):
             raise Exception("Favor validar sus parámetros de entrada.")
+        elif costArray[k+1]>costArray[k]:
+            raise Exception("Algoritmo divergente. Disminuya la tasa de aprendizaje.") 
 
+    print("Convergencia alcanzada con "+str(k+1)+" iteraciones." if k+1<maxit  else "Número máximo de iteraciones alcanzado")
+    print("ECM Final: "+str(costArray[k+1]))
     return theta,costArray
 
 
 if __name__ == "__main__":
     #variables de entrada
     x=np.array([0,1,2,3,4,5,6,7,8])
-    y=np.array([0,2,4,6,8,10,12,14,20])
+    y=np.sin(x)
     linePlot(x,y)
 
     #variables del sistema
-    alfa=0.05
-    maxit=1000
-    umbralError=0.00000001
+    alfa=0.06
+    maxit=10000
+    umbralError=0.000000001
 
     theta,costArray=regresionLineal(x,y=y,alfa=alfa,maxit=maxit,umbralError=umbralError)
 

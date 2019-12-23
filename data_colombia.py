@@ -29,14 +29,20 @@ data_np=data.to_numpy()
 año=np.array(data.index)
 
 #pruebas ML
-alfa=0.0000005
-maxit=1000
-umbral=1e-6
+alfa=0.01
+maxit=10000
+umbral=1e-12
 
-theta,costos=rl.regresionLineal(año,y=data_np,alfa=alfa,maxit=maxit,umbralError=umbral)
-hipotesis=rl.hipotesis(theta,año)
-rl.linePlot(año,hipotesis)
+año_n,media,std=rl.featureScaling(año)
+theta,costos=rl.regresionLineal(año_n,y=data_np,alfa=alfa,maxit=maxit,umbralError=umbral)
+hipotesis=rl.hipotesis(theta[-1],año_n)
+rl.linePlot(rl.featureDescaling(año_n,media,std),hipotesis)
 
-print(costos)
+#print(costos)
+#plt.legend(["Original","Pred"])
+
+plt.figure()
+rl.linePlot(range(len(costos)),costos)
+
 plt.show()
 

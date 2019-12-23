@@ -1,20 +1,37 @@
 import numpy as np
 from matplotlib import pyplot as plt
-from functools import reduce
 
-
+#TODO
+#ECUACIÓN NORMAL
 def linePlot(x,y,xlabel="",ylabel="",title="",axis=None):
-    
+    '''Grafica en el plano x-y'''
     plt.plot(x,y)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)
     if axis:
         plt.axis(axis)
+
+def countourPlot(*x,y,xlabel="",ylabel="",title="",axis=None):
+
+    assert len(x)==2,"Solo es posible graficar para tres dimensiones."
+    if not len(x[0])==len(x[1])==len(y):
+        raise Exception("Los tamaños de las entradas deben ser los mismos. "+str(len(x[0]))+" "+str(len(x[1]))+" "+str(len(y)))
+
+
+    plt.contour(x[0], x[1], y, cmap='viridis', levels=np.logspace(-2, 3, 20))
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.plot(x[0], x[1], 'ro', ms=10, lw=2)
+    plt.title(title)
     
 
 #recibe el arreglo de entrada
 def hipotesis(theta,*x):
+    '''Recibe: 
+        valores de los parámetros.
+        n listas de m elementos con los valores de cada feature
+       Retorna predicciones para cada fila'''
     m=len(x[0])
     x=reorganizarParametros(x,m)
     res=np.zeros(m)
@@ -22,7 +39,7 @@ def hipotesis(theta,*x):
     return list(map(lambda ex:h(theta,ex),x))
         
 
-#RECIBE UNA FILA
+
 def h(theta,x):
     #x=np.append(1,x)
     #print((x*theta))
@@ -30,19 +47,21 @@ def h(theta,x):
     #return np.transpose(theta)@x
 
 def reorganizarParametros(x,m):
-    #reorganizando x para más fácil manejo    
+    '''Recibe un tuple de n elementos donde cada elemento es un array de m  filas'''    
+    #print(x)
     x2=[]
     for i in range(m):   
         x2.append([x_j[i] for x_j in x ])        
 
     x=np.insert(x2,0,1,axis=1) #agregando la columna x_0
+    #print(x)
     return x
 
-#una variable
+
 def costFunction(x,y,theta):
-    
+    """error cuadrático medio de h(x) comparado con y"""
     m=np.size(y) #asumiendo que size(x)=size(y)
-    x=reorganizarParametros(x,m)
+    x=reorganizarParametros(x,len(x))
     suma=sum(map(lambda x,y: (h(theta,x)-y)**2,x,y))
     return suma/(2*m)
 
@@ -61,47 +80,80 @@ def gradientDescent(x,y,theta,alfa):
     return theta
 
 def regresionLineal(*x,y,alfa,maxit=1000,umbralError=0.001):
-    """jajajaja"""
-    theta=np.ones(len(x)+1).astype(float)
+    """"""
+    theta=[np.ones(len(x)+1).astype(float)]
     
     costArray=np.nan*np.zeros(maxit+1)
-    costArray[0]=costFunction(x,y,theta)
+    costArray[0]=costFunction(x,y,theta[-1])
 
     for k in range(maxit):
-        theta=gradientDescent(x,y,theta,alfa)
-        
-        costArray[k+1]=costFunction(x,y,theta)
-        
+
+        theta.append(gradientDescent(x,y,theta[-1].copy(),alfa))    
+        costArray[k+1]=costFunction(x,y,theta[-1])
         if np.abs(costArray[k+1]-costArray[k]) < umbralError:
             break
-        elif any(np.isnan(theta)):
+        elif any(np.isnan(theta[-1])):
             raise Exception("Favor validar sus parámetros de entrada.")
         elif costArray[k+1]>costArray[k]:
             raise Exception("Algoritmo divergente. Disminuya la tasa de aprendizaje.") 
 
     print("Convergencia alcanzada con "+str(k+1)+" iteraciones." if k+1<maxit  else "Número máximo de iteraciones alcanzado")
     print("ECM Final: "+str(costArray[k+1]))
-    return theta,costArray
+    return theta,costArray[:k+1]
 
+def featureScaling(x,tipo="std",normalizar=True):
+    """x es la característica. 
+    si tipo=std, normaliza con respecto a la dev. estándar (por defecto)
+    si tipo=rango, normaliza con respecto a max(x)-min(x)
+    si normalizar=False, no normaliza solo centra con respecto a la media
+
+    retorna x_normalizado,media[,std/rango]
+    """
+    media=np.mean(x)
+    std=np.std(x)
+    rango=(np.max(x)-np.min(x))
+    x_centrado=x-media
+
+    if normalizar:
+        assert tipo in ["std","rango"]
+        
+        if tipo=="std":
+            return x_centrado/std,media,std
+        else: 
+            return x_centrado/rango,media,rango
+        
+    else:
+        return x_centrado,media
+
+def featureDescaling(x_n,media,s=""):
+    if s:
+        return s*x_n+media
+    else:
+        return x_n+media
 
 if __name__ == "__main__":
     #variables de entrada
-    x=np.array([0,1,2,3,4,5,6,7,8])
-    y=np.sin(x)
+    #countourPlot("jajaja","jiji","jjojoo",y="jijiji")
+    x=np.linspace(0,2*np.pi,num=100)
+    y=np.linspace(0,2*np.pi,num=100)
     linePlot(x,y)
-
+    
     #variables del sistema
-    alfa=0.06
+    alfa=0.33
     maxit=10000
-    umbralError=0.000000001
+    umbralError=1e-6
 
-    theta,costArray=regresionLineal(x,y=y,alfa=alfa,maxit=maxit,umbralError=umbralError)
+    x_n,media,rango=featureScaling(x,tipo="std")
+    #linePlot(x,y)
+    thetaArray,costArray=regresionLineal(x_n,y=y,alfa=alfa,maxit=maxit,umbralError=umbralError)
 
     #ver resultados
     #plt.figure()
-    linePlot(x,hipotesis(theta,x))
+    linePlot(featureDescaling(x_n,media,rango),hipotesis(thetaArray.pop(),x_n))
+    plt.legend(["original","prediccion"])
     plt.figure()
-    linePlot(costArray,range(len(costArray)))
+    linePlot(range(len(costArray)),costArray)
+
     #print(theta)
     plt.show()
 

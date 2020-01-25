@@ -1,0 +1,86 @@
+.vscode/launch.json
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/stepwise
+__pycache__/test_prueba.cpython-36-pytest-5.2.2.pyc
+__pycache__/regresion.cpython-36.pyc
+.vscode/settings.json
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+.ipynb_checkpoints/Untitled1-checkpoint.ipynb
+.pytest_cache/v/cache/lastfailed
+.vscode/tasks.json
+Data/osb_demografia_piramide_poblacional_v2.csv
+Data/Saber_11__2019-1.csv
+Data/UCI HAR Dataset.zip
+Data/API_COL_DS2_es_csv_v2_449302/API_COL_DS2_es_csv_v2_449302.csv
+Data/API_COL_DS2_es_csv_v2_449302/Metadata_Country_API_COL_DS2_es_csv_v2_449302.csv
+Data/API_COL_DS2_es_csv_v2_449302/Metadata_Indicator_API_COL_DS2_es_csv_v2_449302.csv
+Data/UCI HAR Dataset/UCI HAR Dataset/.DS_Store
+Data/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/features_info.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/features.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/README.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_acc_x_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_acc_y_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_acc_z_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_gyro_x_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_gyro_y_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/body_gyro_z_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/total_acc_x_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/total_acc_y_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/test/Inertial Signals/total_acc_z_test.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt
+Data/UCI HAR Dataset/__MACOSX/._UCI HAR Dataset
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._.DS_Store
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._activity_labels.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._features_info.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._features.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._README.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._test
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/._train
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/._Inertial Signals
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/._subject_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/._X_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/._y_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_acc_x_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_acc_y_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_acc_z_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_gyro_x_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_gyro_y_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._body_gyro_z_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._total_acc_x_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._total_acc_y_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/test/Inertial Signals/._total_acc_z_test.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/._Inertial Signals
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/._subject_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/._X_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/._y_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_acc_x_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_acc_y_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_acc_z_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_gyro_x_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_gyro_y_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._body_gyro_z_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc_x_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc_y_train.txt
+Data/UCI HAR Dataset/__MACOSX/UCI HAR Dataset/train/Inertial Signals/._total_acc_z_train.txt
+.ipynb_checkpoints/regresion lineal-checkpoint.ipynb
+Data/API_COL_DS2_es_csv_v2_449302/.~lock.API_COL_DS2_es_csv_v2_449302.csv#
+Data/UCI HAR Dataset/UCI HAR Dataset/train/X_train.csv
+Data/UCI HAR Dataset/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.csv
+__pycache__/regresionLineal.cpython-36.pyc
+.vscode/.ropeproject/config.py
+.vscode/.ropeproject/objectdb

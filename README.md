@@ -11,3 +11,4 @@ Fuentes:
 - CS 109 Harvard (2015) http://cs109.github.io/2015/
 - Machine Learning por Universidad de Stanford (Andrew Ng) https://www.coursera.org/learn/machine-learning/home/welcome
 - Deep Learning por 3Blue1Brown https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+- CS 229 Stanford (2019) http://cs229.stanford.edu/syllabus.html

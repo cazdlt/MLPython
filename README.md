@@ -6,6 +6,7 @@ Notas:
 - Gradient Descent
 - Redes Neuronales Feed Forward + Backpropagation
 - k-Nearest Neighbors
+- Support Vector Machines
 
 Fuentes:
 - CS 109 Harvard (2015) http://cs109.github.io/2015/

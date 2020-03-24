@@ -18,7 +18,7 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,random_state=42)
 ax[0].scatter(X_test[:,0],X_test[:,1],c=y_test)
 
 #predice y grafica
-reg=LogisticRegression(random_state=42,max_iter=10000).fit(X_train,y_train)
+reg=LogisticRegression(random_state=42,max_iter=10000,).fit(X_train,y_train)
 y_pred=reg.predict(X_test)
 ax[1].scatter(X_test[:,0],X_test[:,1],c=y_pred)
 

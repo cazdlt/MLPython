@@ -26,4 +26,3 @@ Ideas de proyectos:
 - (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...).
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
-- (Audio) Nombre de canción desde el audio (Shazam).

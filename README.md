@@ -11,10 +11,10 @@ Notas:
 - Random forests + Boosting
 
 Fuentes:
-- CS 109 Harvard (2015) http://cs109.github.io/2015/
+- Harvard CS109 - Data Science (2015) http://cs109.github.io/2015/
 - Machine Learning por Universidad de Stanford (Andrew Ng) https://www.coursera.org/learn/machine-learning/home/welcome
 - Deep Learning por 3Blue1Brown https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
-- CS 229 Stanford (2019) http://cs229.stanford.edu/syllabus.html
+- Stanford CS229 - Machine Learning (2019) http://cs229.stanford.edu/syllabus.html
 - The Elements of Statistical Learning [pdf](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 
 Por implementar:
@@ -26,3 +26,10 @@ Ideas de proyectos:
 - (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...).
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
+
+Otro contenido:
+- Tipos de gráficas para estadística en matplotlib [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_03_statistical_graphs.ipynb)
+- EDA [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
+- Stanford CS230 - Deep Learning (2018) [contenido](https://cs230.stanford.edu/syllabus/) [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb)
+- Stanford CS231n - Convolutional Neural Networks for Visual Recognition [contenido](http://cs231n.github.io/) [videos](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+

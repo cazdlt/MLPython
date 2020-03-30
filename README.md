@@ -32,4 +32,6 @@ Otro contenido:
 - EDA [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
 - Stanford CS230 - Deep Learning (2018) [contenido](https://cs230.stanford.edu/syllabus/) [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb)
 - Stanford CS231n - Convolutional Neural Networks for Visual Recognition [contenido](http://cs231n.github.io/) [videos](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+- Stanford CS234 - Reinforcement Learning (2019) [contenido](https://web.stanford.edu/class/cs234/schedule.html) [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
+- [The evolution of image classification explained](https://stanford.edu/~shervine/blog/evolution-image-classification-explained)
 

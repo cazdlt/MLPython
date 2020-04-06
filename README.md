@@ -23,7 +23,7 @@ Por implementar:
 Ideas de proyectos:
 - (Regresión y recomendación) Predecir ratings de RYM y recomendar nuevos discos.
 - (Recomendación y ¿clustering?) Agrupar scrobbles de last.fm y recomendar nuevos discos.
-- (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...).
+- (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...) o adivinar medio a partir de contenido.
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
 

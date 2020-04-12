@@ -30,10 +30,11 @@ Implementando:
 
 Ideas de proyectos:
 - (Regresión y recomendación) Predecir ratings de RYM y recomendar nuevos discos.
-- (Recomendación y ¿clustering?) Agrupar scrobbles de last.fm y recomendar nuevos discos.
+- (Recomendación y topics) Agrupar scrobbles de last.fm y recomendar nuevos discos.
 - (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...) o adivinar medio a partir de contenido.
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
+- (Recomendación, topics) Crear nuevas playlist de spotify a partir de género o una playlist base.
 
 Otro contenido:
 - Tipos de gráficas para estadística en matplotlib [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_03_statistical_graphs.ipynb)
@@ -45,3 +46,4 @@ Otro contenido:
 - Deep Learning Specialization [Coursera](https://www.coursera.org/specializations/deep-learning?utm_source=deeplearningai&utm_medium=institutions&utm_campaign=WebsiteCoursesDLSTopButton)
 - A Few Useful Things to Know About Machine Learning [artículo](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 - Unsupervised Feature Learning and Deep Learning Tutorial [Stanford](http://ufldl.stanford.edu/tutorial/)
+- Notas de implementaciones comunes de Machine Learning en notebooks https://chrisalbon.com/

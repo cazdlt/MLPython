@@ -12,10 +12,15 @@ Notas:
 - Random forests + Boosting
 - Sistemas de recomendación
 - Bayes 
+- Clustering
+    - KMeans
+    - Meanshift
 - Notas y tips varios
     - PCA
     - Muestreo y características
     - Big Data
+    - Presentaciones
+    - Experimentos
 
 Fuentes:
 - Harvard CS109 - Data Science (2015) http://cs109.github.io/2015/
@@ -29,12 +34,12 @@ Implementando:
 - Comparación entre clasificadores (MNIST?)
 
 Ideas de proyectos:
-- (Regresión y recomendación) Predecir ratings de RYM y recomendar nuevos discos.
-- (Recomendación y topics) Agrupar scrobbles de last.fm y recomendar nuevos discos.
+- (Regresión, recomendación) Predecir ratings de RYM y recomendar nuevos discos.
+- (Recomendación, clustering) Agrupar scrobbles de last.fm y recomendar nuevos discos.
 - (NLP) Crear artículos nuevos según autor y/o medio de publicación (semana, espectador, dos orillas...) o adivinar medio a partir de contenido.
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
-- (Recomendación, topics) Crear nuevas playlist de spotify a partir de género o una playlist base.
+- (Recomendación, clustering) Crear nuevas playlist de spotify a partir de género o una playlist base.
 
 Otro contenido:
 - Tipos de gráficas para estadística en matplotlib [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_03_statistical_graphs.ipynb)

@@ -26,7 +26,7 @@ Fuentes:
 - Harvard CS109 - Data Science (2015) http://cs109.github.io/2015/
 - Machine Learning por Universidad de Stanford (Andrew Ng) https://www.coursera.org/learn/machine-learning/home/welcome
 - Deep Learning por 3Blue1Brown [youtube](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-- Stanford CS229 - Machine Learning (2019) http://cs229.stanford.edu/syllabus.html
+- Stanford CS229 - Machine Learning (2019) http://cs229.stanford.edu/syllabus.html [youtube](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
 - The Elements of Statistical Learning [pdf](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 - Machine Learning por Paul G. Allen School [youtube](https://www.youtube.com/user/UWCSE/playlists?shelf_id=16&sort=dd&view=50)
 
@@ -40,6 +40,8 @@ Ideas de proyectos:
 - (Imágenes) Repetir proyecto de clasificación de lenguaje de señas.
 - (Audio) Clasificar géneros colombianos (gaita, porro, cumbia, fandango...)
 - (Recomendación, clustering) Crear nuevas playlist de spotify a partir de género o una playlist base.
+- (Imágenes) Reconocer caras de la gente y animales de mi casa
+- (Audio) Crear canciones con AI. (A partir de tónica, progresión, mood, no sé)
 
 Otro contenido:
 - Tipos de gráficas para estadística en matplotlib [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_03_statistical_graphs.ipynb)

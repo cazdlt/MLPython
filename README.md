@@ -49,6 +49,7 @@ Ideas de proyectos:
 - (RNN) Generador de música (Ver openai/MuseNet, tensorflow/Magenta)
 - (RL) Tetris clásico
 - (RL) Agente para SIC Cooperativo
+- (Imágenes) Reconocer caras de la gente y animales de mi casa
 
 Otro contenido:
 - Tipos de gráficas para estadística en matplotlib [notebook](https://nbviewer.jupyter.org/github/cs109/content/blob/master/lec_03_statistical_graphs.ipynb)

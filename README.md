@@ -35,6 +35,7 @@ Fuentes:
     - Machine Learning por Paul G. Allen School [youtube](https://www.youtube.com/user/UWCSE/playlists?shelf_id=16&sort=dd&view=50)
 - Reinforcement Learning
     - Stanford CS 234 - Reinforcement Learning (2019) [contenido](http://web.stanford.edu/class/cs234/index.html) [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
+    - Introduction to Reinforcement Learning por UCL (David Silver 2015) [contenido](https://www.davidsilver.uk/teaching/) [videos](https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB)
 
 Ideas de proyectos:
 - (Regresión, recomendación) Predecir ratings de RYM y recomendar nuevos discos.

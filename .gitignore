@@ -1,4 +1,6 @@
 Data/*
-.ipynb_checkpoints/*
+.ipynb_checkpoints
 docs/*
 Tutoriales/*
+*__pycache__
+.vscode

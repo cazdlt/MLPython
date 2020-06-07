@@ -24,6 +24,12 @@ Notas:
         - Experimentos
 - Reinforcement Learning
     - Procesos de Markov
+    - TD Learning
+    - Q Learning
+    - Aproximación de funciones
+    - Deep RL
+        - Deep Q Learning
+        - Replay Memory
 
 Fuentes:
 - Machine Learning

@@ -4,3 +4,4 @@ docs/*
 Tutoriales/*
 *__pycache__
 .vscode
+.venv

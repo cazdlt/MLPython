@@ -1,0 +1,1 @@
+La verdad hay 0 (cero) ganas de aprender TensorFlow 1.7 en la era de TF2.x y Pytorch entonces implementaré Pong en Pytorch :)
